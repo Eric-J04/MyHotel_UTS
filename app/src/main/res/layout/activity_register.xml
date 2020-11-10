@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/register_component_container"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/register_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_label"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:text="@string/email_label" />
+                <EditText
+                    android:id="@+id/register_email"
+                    android:hint="Fullname"
+                    android:textSize="15sp"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <TextView
+                    android:text="@string/username_label" />
+                <EditText
+                    android:id="@+id/register_username"
+                    android:hint="Username"
+                    android:textSize="15sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/password_label" />
+                <EditText
+                    android:id="@+id/register_password"
+                    android:hint="Password"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/confirmpassword_label" />
+                <EditText
+                    android:id="@+id/register_confirmpassword"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/phonenumber_label" />
+                <EditText
+                    android:id="@+id/register_phonenumber"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textSize="15sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/gender_label" />
+                <RadioGroup
+                    android:id="@+id/register_rbgendergrup"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/register_maleoption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+                    <RadioButton
+                        android:id="@+id/register_femaleoption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/register_btnregister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_gravity="center"
+                    android:text="@string/register_label" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

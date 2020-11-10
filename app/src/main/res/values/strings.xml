@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyHotel</string>
+    <string name="login_label">Login </string>
+    <string name="register_label">Register </string>
+    <string name="logout_label">Log Out</string>
+    <string name="password_label">Password </string>
+    <string name="email_label">Email</string>
+    <string name="username_label">Username</string>
+    <string name="confirmpassword_label">Confirm Password</string>
+    <string name="phonenumber_label">Phone Number</string>
+    <string name="gender_label">Gender</string>
+    <string name="nav_drawer_open">Open Navigation Drawer</string>
+    <string name="nav_drawer_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_component_container"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/login_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            >
+            <TableRow
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                >
+                <TextView
+                    android:text="@string/email_label"
+                    />
+                <EditText
+                    android:id="@+id/login_email"
+                    android:hint="Email"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text="@string/password_label"
+                    />
+                <EditText
+                    android:id="@+id/login_password"
+                    android:hint="Password"
+                    />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/login_btnlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_label"
+                    android:layout_gravity="center"
+                    />
+                <Button
+                    android:id="@+id/login_btnregister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_label"
+                    android:layout_gravity="center"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

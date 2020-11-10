@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="15dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/hotel_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hotel_items_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Name"
+        android:layout_margin="6dp"
+        android:layout_gravity="left"
+        android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/hotel_items_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Desc"
+                android:layout_margin="6dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/hotel_items_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel price"
+                android:layout_margin="6dp"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
